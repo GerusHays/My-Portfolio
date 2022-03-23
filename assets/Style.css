@@ -5,9 +5,11 @@
 }
 
 :root {
-    --primary-color: red;
-    --secondary-color: blue;
+    --primary-color: black;
+    --secondary-color: white;
     --third-color: green;
+    --h2-size: 35px;
+    --content-font: 20px;
 }
 
 header {
@@ -18,21 +20,21 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-color: black;
+    background-color: var(--primary-color);
     background-position: 80%;
     z-index: 9999;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color: white;
+    font-size: 40px;
+    color: var(--secondary-color);
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
 }
 
 header nav {
@@ -79,12 +81,12 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--secondary-color);
 }
 
 .About {
-    color: white;
-    background-color: black;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .About h2 {
@@ -93,6 +95,7 @@ body, html {
     position: relative;
     padding-left: 150px;
     top: 175px;
+    font-size: var(--h2-size);
 }
 
 .About img {
@@ -112,4 +115,54 @@ body, html {
     position: relative;
     padding-right: 150px;
     bottom: 175px;
+    font-size: var(--content-font);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-basis: calc(50% -1em);
+    align-items: flex-end;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    background-size: 15
+}
+
+.run-buddy {
+    min-height: 700px;
+    flex-basis: 100%;
+    margin: 100px;
+}
+
+.Contact-Me {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.Contact-Me h2 {
+    font-size: var(--h2-size);
+    justify-content: left;
+    padding-right: 150px !important; 
+}
+
+.contact {
+    padding-top: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: var(--content-font);
 }
