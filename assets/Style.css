@@ -121,6 +121,10 @@ body, html {
     justify-content: center;
 }
 
+.work-head h2 {
+    font-size: var(--h2-size);
+}
+
 .work-code {
     display: flex;
     justify-content: center;
@@ -198,4 +202,20 @@ body, html {
     text-decoration: none;
     color: var(--secondary-color);
     font-size: var(--content-font);
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        height: 100%
+    }
+
+    header {
+        width: 100%;
+    }
 }
