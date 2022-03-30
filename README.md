@@ -27,6 +27,7 @@ Thank you for checking out my webpage!
 ### My links:
 - 📧 Get in touch via [email](mailto:gerushays@gmail.com)
 - 🔗 Connect with me on [LinkedIn](https://www.linkedin.com/in/gerushays/)
+- My [website] https://gerushays.github.io/My-Portfolio/
 
 
 ### Some languages, technologies, and tools I use:
